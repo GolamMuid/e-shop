@@ -923,6 +923,205 @@ hr {
 
 /* Cart Page ends  */
 /* <==================end==============> */
+
+/* My Account page starts */
+
+/* Breadcrumb Starts  */
+
+.breadcrumb-container {
+  margin-bottom: 26px;
+}
+
+.gray a {
+  color: #808080;
+  font-size: 1.375rem;
+}
+
+.green a {
+  color: #3c7a17;
+  font-size: 1.375rem;
+}
+
+/* Breadcrumb ends  */
+
+/* Account container Starts  */
+
+.my-account-container {
+  margin-bottom: 40px;
+}
+
+.account-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 24px;
+}
+
+/* Account Options starts */
+
+.account-options {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  border: none;
+  border-radius: 6px;
+}
+
+.selected-option {
+  color: #3c7a17;
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+}
+
+.unselected-option {
+  color: #3d3d3d;
+  font-size: 1.375rem;
+  margin-bottom: 20px;
+}
+
+/* Account Options ends */
+
+/* Account order details starts  */
+
+.account-order-details-container {
+  display: grid;
+  grid-template-rows: 5fr 4fr;
+  row-gap: 20px;
+}
+
+.my-assets-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+}
+
+.account-name-number {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  border-radius: 6px;
+}
+
+.account-name-image-container {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  background-color: #3c7a17;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.account-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.account-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.account-phone-number-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+  background-color: #3d3d3d;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.wishlist-order-coupon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.coupon-number {
+  font-size: 2rem;
+}
+
+.coupon-type {
+  font-size: 1rem;
+}
+
+.tracking-order-recent-views-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.tracking-order-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+}
+
+.tracking-id-title {
+  font-size: 1.125rem;
+  color: #242527;
+}
+
+.order-id-button-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10px;
+}
+
+.order-id {
+  max-height: 50%;
+}
+
+.track-button {
+  border-radius: 4px;
+  color: #3c7a17;
+  border: solid 1px #3c7a17;
+  font-size: 1rem;
+  max-height: 50%;
+}
+
+.recent-views-container {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  padding: 10px;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.31);
+}
+
+.recent-product-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.recent-per-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recent-product-image img {
+  max-height: 100%;
+}
+
+/* Account order details ends  */
+
+/* Account container endss  */
+
+/* My Account page ends */
+
 /* <==============footer====================> */
 .footer-container {
   position: relative;
