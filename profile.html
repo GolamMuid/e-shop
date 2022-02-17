@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS CDN  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title  -->
+
+    <title>Profile</title>
+
+</head>
+
+<body>
+
+    <!-- My Account Starts  -->
+
+    <section class="my-account-section">
+        <div class="my-account-container container">
+
+            <!-- Beadcrumb Starts  -->
+
+            <div class="breadcrumb-container">
+                <span class="gray">
+                    <a href="index.html">Home > </a>
+
+                </span>
+                <span class="green">
+                    <a href="my-account.html">My Account</a>
+                </span>
+
+            </div>
+
+            <!-- Breadcrumb ends  -->
+
+            <!-- account Container starts  -->
+
+            <div class="account-container">
+                <div class="account-options">
+                    <a class="unselected-option" href="">My account</a>
+                    <a class="selected-option" href="">Profile</a>
+                    <a class="unselected-option" href="">Order</a>
+                    <a class="unselected-option" href="">Payment</a>
+                    <a class="unselected-option" href="">Change password</a>
+                    <button class="apply-button"> Logout </button>
+                </div>
+
+                <div class="profile-information-container">
+                    <div class="profile-title-container">
+                        Your Profile
+                    </div>
+                    <div class="profile-form-container">
+                        <form class="profile-form" action="">
+                            <label for="profile-name" class="profile-input-label"> Profile Name </label>
+                            <br>
+                            <input type="text" class="profile-input">
+                            <label for="profile-email-address" class="profile-input-label"> Email-address </label>
+                            <br>
+                            <input type="text" class="profile-input email-input">
+                            <span> <button class="verify-button"> Verify </button> </span>
+                            <label for="profile-phone-number" class="profile-input-label"> Phone Number </label>
+                            <br>
+                            <input type="text" class="profile-input">
+                            <label for="profile-gender" class="profile-input-label"> Gender </label>
+                            <br>
+                            <select name="profile-gender" id="profile-gender" class="profile-gender-select">
+                                <option value="Male"> Male </option>
+                                <option value="Female"> Female </option>
+                            </select>
+                            <br>
+                            <label for="profile-name" class="profile-input-label"> Date of Birth (YYYY-DD-MM) </label>
+                            <br>
+                            <input type="text" class="profile-input">
+
+                        </form>
+                    </div>
+
+                    <div class="delivery-address-container">
+                        <div class="delivery-address-title">
+                            <i class="fa-regular fa-location-dot"></i>
+                            Select a delivery address
+                        </div>
+                        <div class="add-new-address">
+                            + New Address
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="footer">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Your Store</p>
+                </div>
+                <div class="footer-grid location-box">
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></i></div>
+                    <div class="time-table">
+                        Address: 529-19, Gwangyeo-ro Gonjiam-eup, Gwangju-si. Gyeonggi-do
+                        12722.
+                    </div>
+                </div>
+                <div class="time-table">Monday - Friday: 9:00-20:00</div>
+                <div class="time-table">Saturady: 11:00 - 15:00</div>
+                <div class="time-table">Show on map</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Need help</p>
+                </div>
+
+                <div class="footer-font">+48 525-350-0968</div>
+
+                <div class="footer-grid">
+                    <div><img src="./images/messege.png"></div>
+                    <div class="online-column">
+                        <div class="footer-chat">Online chat</div>
+                        <div class="online-chat">Get Expert Help</div>
+                    </div>
+                </div>
+                <div class="footer-font">groceryinfo@gmail.com</div>
+                <div class="social-icon">
+                    <div class="foot-social-icon"> <i class="fab fa-facebook"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-twitter"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-google-plus-g"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-youtube"></i></div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Account</p>
+                </div>
+
+                <div class="footer-font">My Account</div>
+                <div class="footer-font">My Order</div>
+                <div class="footer-font">Returns</div>
+                <div class="footer-font">Shipping</div>
+                <div class="footer-font">Wishlist</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Store</p>
+                </div>
+
+                <div class="footer-font">Affilate</div>
+                <div class="footer-font">Bestsellers</div>
+                <div class="footer-font">discount</div>
+                <div class="footer-font">Latest Products</div>
+                <div class="footer-font">Sale</div>
+            </div>
+        </div>
+        <div class="container foot-container">
+            <div class="left-foot">
+                <div class="left-foot-font">About Us</div>
+                <div class="left-foot-font">Delivery information</div>
+                <div class="left-foot-font">Privacy Policy</div>
+                <div class="left-foot-font">Sales</div>
+            </div>
+            <div class="pay-card">
+                <img src="./images/paidcard.png" />
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
