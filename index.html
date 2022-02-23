@@ -2626,63 +2626,8 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
+    <script src="./script.js"></script>
 
-    <!-- Deal on the day slider script starts  -->
-
-    <script>
-        var swiper = new Swiper(".dotdSwiper", {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
-
-    <!-- Deal on the day slider script ends  -->
-
-    <!-- New arrival slider script starts  -->
-
-    <script>
-        var swiper = new Swiper(".napSwiper", {
-            slidesPerView: 5,
-            spaceBetween: 30,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-
-        window.onscroll = function () { myFunction() };
-
-        var navbar = document.getElementById("navbar");
-        var sticky = navbar.offsetTop;
-
-        function myFunction() {
-            if (window.pageYOffset >= sticky) {
-                navbar.classList.add("sticky")
-            } else {
-                navbar.classList.remove("sticky");
-            }
-        }
-
-
-
-    </script>
-
-    <!-- New arrival slider script starts  -->
 </body>
 
 </html>
