@@ -26,6 +26,106 @@ a:active {
 
 /* For All Ends  */
 
+.header {
+  width: 100%;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.header img {
+  max-width: 100%;
+}
+
+.header-options {
+  background-color: #3c7a17;
+  padding: 10px 10%;
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr 1fr 1fr;
+  text-align: center;
+}
+
+.header-help-option a:link,
+.header-help-option a:hover,
+.header-help-option a:active,
+.header-help-option a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#currency,
+#language {
+  background-color: #3c7a17;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  z-index: 999;
+}
+
+.top-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr;
+}
+
+.nav-address {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.nav-address-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.nav-adress-location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-search {
+  display: flex;
+  align-items: center;
+}
+
+.nav-search-form {
+  font-size: 1.75rem;
+  width: 100%;
+}
+
+.search-input {
+  font-size: 1.125rem;
+}
+
+#search {
+  width: 80%;
+}
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icons a:link,
+.nav-icons a:hover,
+.nav-icons a:active,
+.nav-icons a:visited {
+  color: #3d3d3d;
+  padding: 0 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /* Body starts  */
 
 .container {
