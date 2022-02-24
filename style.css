@@ -26,6 +26,8 @@ a:active {
 
 /* For All Ends  */
 
+/* header navbar starts  */
+
 .header {
   width: 100%;
   font-size: 1.5rem;
@@ -126,7 +128,73 @@ a:active {
   width: 100%;
 }
 
-/* Body starts  */
+.all-categorires-and-bottom-nav-containers {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.dropbtn {
+  background-color: #3c7a17;
+  color: white;
+  padding: 4px 16px;
+  font-size: 1.125rem;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.bottom-nav-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-nav a:link,
+.bottom-nav a:hover,
+.bottom-nav a:visited,
+.bottom-nav a:active {
+  color: #3d3d3d;
+}
+
+/* header navbar ends  */
 
 .container {
   width: 80%;
@@ -134,7 +202,6 @@ a:active {
   margin-right: auto;
 }
 
-/* Body ends  */
 /* <============home page==============> */
 
 /* <==========View Categories=====> */
@@ -751,9 +818,16 @@ hr {
   font-weight: 500;
 }
 
+.banner3-container img {
+  width: 100%;
+}
+
 /* Best Seller banner ends  */
 
+/* Body ends  */
+
 /* Index ends  */
+
 /* <=======brand========> */
 .brand {
   position: relative;
