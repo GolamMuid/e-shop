@@ -41,6 +41,21 @@ window.onclick = function (event) {
 
 // categories dropdown endss
 
+// first slider starts
+
+var swiper = new Swiper(".indexFirstSliderSwiper", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".first-slide-next",
+    prevEl: ".first-slide-prev",
+  },
+});
+
+// first slider ends
+
 // deal of the day slider starts
 
 var swiper = new Swiper(".dotdSwiper", {
@@ -70,9 +85,63 @@ var swiper = new Swiper(".napSwiper", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".nap-next",
+    prevEl: ".nap-prev",
   },
 });
 
 // new arrival product slider starts
+
+// Babycare slider starts
+
+var swiper = new Swiper(".babycareSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".babycare-next",
+    prevEl: ".babycare-prev",
+  },
+});
+
+// Babycare slider ends
+
+// FOod slider starts
+
+var swiper = new Swiper(".foodSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".foodSwiper-next",
+    prevEl: ".foodSwiper-prev",
+  },
+});
+
+// Food slider ends
+
+// Vegitable slider starts
+
+var swiper = new Swiper(".vegetableSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".vegetableSwiper-next",
+    prevEl: ".vegetableSwiper-prev",
+  },
+});
+
+// Vegitable slider ends

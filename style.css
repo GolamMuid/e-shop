@@ -159,7 +159,7 @@ a:active {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 160px;
+  /* min-width: 160px; */
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 999;
@@ -195,6 +195,64 @@ a:active {
 }
 
 /* header navbar ends  */
+
+/* first slider starts  */
+
+.first-slider {
+  width: 100%;
+}
+
+.first-slider-image-container img {
+  width: 100%;
+}
+
+.first-slider-contents {
+  position: absolute;
+  left: 60px;
+  top: 30%;
+}
+
+.first-slider-headline-container {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3c7a17;
+  margin-bottom: 20px;
+}
+
+.first-slider-text-container {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #3c7a17;
+  margin-bottom: 20px;
+}
+
+.first-slider-button-container button {
+  font-size: 1rem;
+  color: white;
+  background-color: #3c7a17;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.first-slide-next,
+.first-slide-prev {
+  background-color: #3c7a17;
+  color: white;
+  font-size: 4px !important;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.first-slide-next::after,
+.first-slide-prev::after {
+  font-size: 1rem !important;
+}
+
+/* first slider ends  */
 
 .container {
   width: 80%;
@@ -350,7 +408,6 @@ a:active {
   font-size: 2.25rem;
   line-height: 3.074rem;
   font-weight: 600;
-
   position: absolute;
   top: 25%;
   left: 20%;
@@ -424,8 +481,11 @@ a:active {
   line-height: 2.049rem;
   font-weight: 500;
 }
+
 /* <===========End==================> */
+
 /* Body ends  */
+
 hr {
   width: 80%;
   margin-left: auto;
@@ -598,8 +658,7 @@ hr {
 }
 .prev-btn::after,
 .next-btn::after {
-  margin-left: auto;
-  margin-right: auto;
+  font-size: 1rem !important;
 }
 
 .next-btn {
@@ -1380,6 +1439,49 @@ hr {
 }
 
 /* Profile ends  */
+
+/* payment starts  */
+
+.payment-history-container {
+  width: 100%;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.payment-year {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.available-balance-container {
+  padding: 10px;
+  border: solid 1px #6e6e6e;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.account-balance-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.account-balance,
+.balance-on-hold {
+  padding: 10px;
+  text-align: center;
+  border: solid 1px #6e6e6e;
+}
+
+.month-container {
+  padding: 10px;
+  border: solid 1px #6e6e6e;
+  text-decoration: underline;
+  color: #3c7a17;
+}
+
+/* payment ends  */
 
 /* <==============footer====================> */
 .footer-container {
