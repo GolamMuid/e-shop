@@ -145,3 +145,30 @@ var swiper = new Swiper(".vegetableSwiper", {
 });
 
 // Vegitable slider ends
+
+// Product detail image script starts
+
+function clickme(smallImg) {
+  var fullImg = document.getElementById("imagebox");
+  fullImg.src = smallImg.src;
+}
+
+// Product detail image script ends
+
+// relatable product slider starts
+
+var swiper = new Swiper(".relatedProductSwiper", {
+  slidesPerView: 5,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".relatedProductSwiper-next",
+    prevEl: ".relatedProductSwiper-prev",
+  },
+});
+
+// relatable product slider ends
