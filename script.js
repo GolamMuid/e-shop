@@ -172,3 +172,42 @@ var swiper = new Swiper(".relatedProductSwiper", {
 });
 
 // relatable product slider ends
+
+//change password
+
+var oldState = false;
+var newState = false;
+var confirmState = false;
+
+function toggle1() {
+  if (oldState) {
+    document.getElementById("old-pass").setAttribute("type", "password");
+    oldState = false;
+  } else {
+    document.getElementById("old-pass").setAttribute("type", "text");
+    oldState = true;
+  }
+  console.log(oldState);
+}
+
+function toggle2() {
+  if (newState) {
+    document.getElementById("new-pass").setAttribute("type", "password");
+    newState = false;
+  } else {
+    document.getElementById("new-pass").setAttribute("type", "text");
+    newState = true;
+  }
+  console.log(newState);
+}
+
+function toggle3() {
+  if (confirmState) {
+    document.getElementById("confirm-pass").setAttribute("type", "password");
+    confirmState = false;
+  } else {
+    document.getElementById("confirm-pass").setAttribute("type", "text");
+    confirmState = true;
+  }
+  console.log(confirmState);
+}
