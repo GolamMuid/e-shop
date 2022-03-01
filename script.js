@@ -173,6 +173,15 @@ var swiper = new Swiper(".relatedProductSwiper", {
 
 // relatable product slider ends
 
+//product detail script starts
+
+function clickme(smallImg) {
+  var fullImg = document.getElementById("imagebox");
+  fullImg.src = smallImg.src;
+}
+
+//product detail script starts
+
 //change password
 
 var oldState = false;
