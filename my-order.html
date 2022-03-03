@@ -8,8 +8,8 @@
 
     <!-- Font Awesome CDN  -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Custom CSS CDN  -->
@@ -18,7 +18,7 @@
 
     <!-- Title  -->
 
-    <title>My order</title>
+    <title>My Account</title>
 
 </head>
 
@@ -118,44 +118,216 @@
 
     <!-- Header navbar ends  -->
 
-    <!-- My Order Starts  -->
 
-    <section class="my-order">
-        <div class="my-order-container">
-            <div class="my-order-title">
-                Your Order Has Been Placed
+    <!-- My Order starts Starts  -->
+
+    <section class="my-account-section">
+        <div class="my-account-container container">
+
+            <!-- Beadcrumb Starts  -->
+
+            <div class="breadcrumb-container">
+                <span class="gray">
+                    <a href="index.html">Home > </a>
+
+                </span>
+                <span class="green">
+                    <a href="my-account.html">My Account</a>
+                </span>
+
             </div>
-            <div class="my-order-social">
-                Follow Us:
-                <a href="">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a href="">
-                    <i class="fab fa-youtube"></i>
-                </a>
+
+            <!-- Breadcrumb ends  -->
+
+            <!-- account Container starts  -->
+
+            <div class="account-container">
+                <div class="account-options">
+                    <a class="unselected-option" href="my-account.html">My account</a>
+                    <a class="unselected-option" href="profile.html">Profile</a>
+                    <a class="unselected-option" href="notification.html">Notification</a>
+                    <a class="selected-option" href="">Order</a>
+                    <a class="unselected-option" href="payment.html">Payment</a>
+                    <a class="unselected-option" href="change-password.html">Change password</a>
+                    <button class="apply-button"> Logout </button>
+                </div>
+
+                <div class="order-and-detail-container">
+                    <div class="my-orders-confirm-cancel-container">
+                        <div class="order-detail-title">
+                            My Orders
+                        </div>
+                        <div class="complete-cancelled-order-container">
+                            <div class="order-number-and-price">
+                                <button class="green-btn"> Complete</button>
+                                <div class="order-number">
+                                    #12341234
+                                </div>
+                                <div class="order-price">
+                                    365 <i class="fas fa-won-sign"></i>
+                                </div>
+
+                            </div>
+                            <div class="order-date-and-time">
+                                <div class="order-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+
+                                <div class="order-number">
+                                    12341234
+                                </div>
+
+                                <div class="order-date">
+                                    12/12/12
+                                </div>
+
+                                <div class="order-time">
+                                    12:00PM - 2:00PM
+                                </div>
+
+                                <button class="white-btn"> <i class="fa-solid fa-circle-exclamation"></i> Report
+                                    Issue</button>
+
+                            </div>
+                        </div>
+
+                        <div class="complete-cancelled-order-container">
+                            <div class="order-number-and-price">
+                                <button class="gray-btn"> Cancelled</button>
+                                <div class="order-number">
+                                    #12341234
+                                </div>
+                                <div class="order-price">
+                                    365 <i class="fas fa-won-sign"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="order-details-container">
+                        <div class="order-detail-title">
+                            Order Details
+                        </div>
+
+                        <div class="add-all-item">
+                            <i class="fas fa-cart-plus"></i> Add all item to shopping bag
+                        </div>
+
+                        <div class="order-delivery-address">
+                            <p>Delivery Address</p>
+                            <p>H25, Section 3, Adelide</p>
+                        </div>
+
+                        <div class="order-number-time-and-date-container">
+                            <p>12341234</p>
+                            <p>12/12/12</p>
+                            <p>12:00PM - 2:00PM</p>
+                        </div>
+
+                        <div class="order-product-container">
+
+                            <div class="order-product-each">
+                                <div class="order-product-image">
+                                    <img src="./images/order.png" alt="">
+                                </div>
+                                <div class="order-product-detail">
+                                    <div class="order-product-name">
+                                        Coriander vegetable Groca
+                                    </div>
+                                    <div class="order-product-amount-qty-price">
+                                        <div class="order-amount">
+                                            150gm
+                                        </div>
+                                        <div class="order-qty">
+                                            Qty.2
+                                        </div>
+                                        <div class="order-price">
+                                            Tk 10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-product-each">
+                                <div class="order-product-image">
+                                    <img src="./images/order.png" alt="">
+                                </div>
+                                <div class="order-product-detail">
+                                    <div class="order-product-name">
+                                        Coriander vegetable Groca
+                                    </div>
+                                    <div class="order-product-amount-qty-price">
+                                        <div class="order-amount">
+                                            150gm
+                                        </div>
+                                        <div class="order-qty">
+                                            Qty.2
+                                        </div>
+                                        <div class="order-price">
+                                            Tk 10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="order-product-each">
+                                <div class="order-product-image">
+                                    <img src="./images/order.png" alt="">
+                                </div>
+                                <div class="order-product-detail">
+                                    <div class="order-product-name">
+                                        Coriander vegetable Groca
+                                    </div>
+                                    <div class="order-product-amount-qty-price">
+                                        <div class="order-amount">
+                                            150gm
+                                        </div>
+                                        <div class="order-qty">
+                                            Qty.2
+                                        </div>
+                                        <div class="order-price">
+                                            Tk 10
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
         </div>
 
     </section>
 
-    <!-- My Order Ends  -->
+    <!-- My order page ends  -->
 
-    <!-- footer starts  -->
+    <!-- <================footer===========> -->
+
 
     <section id="footer">
+
+        <hr />
+
         <div class="container footer-container">
             <div class="footer-item">
                 <div class="footer-head">
                     <p>Your Store</p>
                 </div>
                 <div class="footer-grid location-box">
-                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></i></div>
                     <div class="time-table">
                         Address: 529-19, Gwangyeo-ro Gonjiam-eup, Gwangju-si. Gyeonggi-do
                         12722.
@@ -224,10 +396,13 @@
         </div>
     </section>
 
-    <!-- footer ends  -->
+    <!-- Footer ends  -->
+
+    <!-- SwiperJs script source  -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script src="./script.js"></script>
-
 
 </body>
 

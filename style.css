@@ -1315,45 +1315,25 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin-right: auto;
 }
 
-.showcase {
-  background-color: var(--primary-color);
-  color: #fff;
-  height: 400px;
+.sign-in-title {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
-.showcase::before,
-.showcase::after {
-  content: "";
-
-  bottom: -70px;
-  left: auto;
-  right: auto;
-  background-color: #fff;
-  height: 100px;
-  transform: skewY(-3deg);
+.sign-in-title a {
+  color: #3d3d3d;
 }
 
-.showcase .grid {
-  grid-template-columns: 55% auto;
-  overflow: visible;
-  grid-gap: 30px;
-}
-
-.showcase h1 {
-  font-size: 40px;
-}
-
-.showcase p {
-  margin: 20px 0;
+.login-selected {
+  color: #3c7a17;
+  text-decoration: underline;
 }
 
 .showcase-form {
-  top: 60px;
   padding: 40px;
-  height: 350px;
-  width: 400px;
+  height: fit-content;
+  width: 40%;
   justify-self: flex-end;
-  z-index: 100;
 }
 
 .showcase-form .form-control {
@@ -1373,7 +1353,16 @@ input[type="range"]:active::-webkit-slider-thumb {
   outline: none;
 }
 .sign-btn {
-  width: 100%;
+  width: 80%;
+  font-size: 24px;
+  background-color: #3c7a17;
+  color: white;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
 }
 .forget-pass {
   margin-top: 10px;
@@ -1381,6 +1370,21 @@ input[type="range"]:active::-webkit-slider-thumb {
 .select-opt {
   margin-top: 15px;
 }
+
+.select-opt p {
+  margin: 10px;
+}
+
+.forget-pass a {
+  color: #3d3d3d;
+}
+
+.select-opt a {
+  color: #3d3d3d;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
 /* Cart Page Starts  */
 
 /* Cart Starts  */
@@ -2276,7 +2280,7 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 /* Confirm OTP page ends  */
 
-/* My Order page Starts  */
+/* Order Placed Starts  */
 
 .my-order-container {
   display: flex;
@@ -2303,7 +2307,135 @@ input[type="range"]:active::-webkit-slider-thumb {
   margin: 0 8px;
 }
 
-/* My Order page Starts  */
+/* Order placed page Starts  */
+
+/* My order page starts  */
+
+.order-and-detail-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  column-gap: 10px;
+}
+
+.order-detail-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+
+.complete-cancelled-order-container {
+  border: solid 1px #3d3d3d;
+  border-radius: 6px;
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 10px;
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.complete-cancelled-order-container div {
+  margin-bottom: 6px;
+}
+
+.green-btn {
+  background-color: #3c7a17;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.white-btn {
+  background-color: white;
+  color: #3d3d3d;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 8px;
+  border: 1px solid #3d3d3d;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+
+.gray-btn {
+  background-color: #a3a3a3;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.order-rating {
+  color: #ececec;
+}
+
+.order-details-container {
+  margin: 10px;
+}
+
+.add-all-item {
+  padding: 16px;
+  color: #3c7a17;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: solid 1px #3d3d3d;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.order-delivery-address {
+  padding: 16px;
+  color: #3d3d3d;
+  font-weight: 500;
+  font-size: 1.125rem;
+  text-align: center;
+  border: solid 1px #3d3d3d;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.order-number-time-and-date-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 10px;
+}
+
+.order-product-container {
+  margin-bottom: 20px;
+}
+
+.order-product-each {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  margin-bottom: 10px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #3d3d3d;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.order-product-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.order-product-amount-qty-price {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* My order page ends  */
 
 /* <==============footer====================> */
 .footer-container {

@@ -121,9 +121,10 @@
   <section id="sign-in">
     <div class="container">
       <div class=" showcase-form card ">
-        <div class="text-center">
-          <a href="#"> SIGN IN </a>
-          <a href="#">REGISTER </a>
+        <div class="sign-in-title">
+          <span class="login-selected"> SIGN IN </span>
+          <span> &nbsp; / &nbsp; </span>
+          <a href="register.html">REGISTER </a>
         </div>
 
         <form>
@@ -134,16 +135,32 @@
           <div class="form-control">
             <input type="email" name="" id="" placeholder="Password" />
           </div>
+
+          <input type="checkbox" name="privacy-agree" id="privacy-agree">
+          <label for="privacy-agree-checkbox"> I agree to Grocery.com terms of Use and privacy policy </label>
+          <br>
+          <br>
+
           <input type="submit" class="sign-btn" value="Sign in" />
           <div class="forget-pass">
             <a href="#"> Forgot your Password? </a>
-            <div class="select-opt">
-              <p>Quick Access With</p>
-            </div>
           </div>
+          <div class="select-opt">
+            <p>Quick Access With</p>
+            <a href="">
+              <i class="fab fa-apple"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+
         </form>
       </div>
-    </div>
+
   </section>
   <hr />
 
