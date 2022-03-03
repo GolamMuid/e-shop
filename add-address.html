@@ -18,7 +18,7 @@
 
     <!-- Title  -->
 
-    <title>Profile</title>
+    <title>Add address</title>
 
 </head>
 
@@ -141,7 +141,7 @@
 
             <!-- Breadcrumb ends  -->
 
-            <!-- account Container starts  -->
+            <!-- add address starts  -->
 
             <div class="account-container">
                 <div class="account-options">
@@ -154,108 +154,37 @@
                     <button class="apply-button"> Logout </button>
                 </div>
 
-                <div class="profile-information-container">
-                    <div class="profile-title-container">
-                        Your Profile
+                <div class="address-add-container">
+                    <div class="address-add-title">
+                        Full Address
                     </div>
-                    <div class="profile-form-container">
-                        <form class="profile-form" action="">
-                            <label for="profile-name" class="profile-input-label"> Profile Name </label>
-                            <br>
-                            <input type="text" class="profile-input">
-                            <label for="profile-email-address" class="profile-input-label"> Email-address </label>
-                            <br>
-                            <input type="text" class="profile-input email-input">
-                            <span> <button class="verify-button"> Verify </button> </span>
-                            <label for="profile-phone-number" class="profile-input-label"> Phone Number </label>
-                            <br>
-                            <input type="text" class="profile-input">
-                            <label for="profile-gender" class="profile-input-label"> Gender </label>
-                            <br>
-                            <select name="profile-gender" id="profile-gender" class="profile-gender-select">
-                                <option value="Male"> Male </option>
-                                <option value="Female"> Female </option>
-                            </select>
-                            <br>
-                            <label for="profile-name" class="profile-input-label"> Date of Birth (YYYY-DD-MM) </label>
-                            <br>
-                            <input type="text" class="profile-input">
-
-                        </form>
-                    </div>
-
-                    <div class="delivery-address-container">
-                        <div class="delivery-address-title">
-                            <i class="fas fa-location-dot"></i>
-                            Select a delivery address
-                        </div>
-                        <div class="add-new-address" onclick="window.location.href = 'add-address.html';">
-                            + New Address
-                        </div>
-                    </div>
-
-
-                    <div class="added-address-container">
-                        <div class="added-address">
-                            <div class="address-section">
-                                <div class="added-address-name">
-                                    John Smith
-                                </div>
-                                <div class="added-address-number">
-                                    1-700-600-3654
-                                </div>
-                                <div class="added-address-location">
-                                    H 5, Section 3, Adelide
-                                </div>
-                                <div class="added-address-country">
-                                    Korea
-                                </div>
-                            </div>
-                            <div class="added-address-buttons">
-                                <button class="address-buttons"> Edit </button>
-                                <button class="address-buttons"> Remove </button>
-                                <div class="default-container">
-                                    <input type="checkbox" name="default-address" id="default-address">
-                                    <label for="default-address">Default</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="added-address">
-                            <div class="address-section">
-                                <div class="added-address-name">
-                                    John Smith
-                                </div>
-                                <div class="added-address-number">
-                                    1-700-600-3654
-                                </div>
-                                <div class="added-address-location">
-                                    H 5, Section 3, Adelide
-                                </div>
-                                <div class="added-address-country">
-                                    Korea
-                                </div>
-                            </div>
-                            <div class="added-address-buttons">
-                                <button class="address-buttons"> Edit </button>
-                                <button class="address-buttons"> Remove </button>
-                                <div class="default-container">
-                                    <input type="checkbox" name="default-address" id="default-address">
-                                    <label for="default-address">Default</label>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
+                    <form action="profile.html">
+                        <label for="receiver-name" class="add-address-label"> Receiver name </label> <br>
+                        <input type="text" class="add-address-input" placeholder="Please endter receiver name"> <br>
+                        <label for="contact-number" class="add-address-label"> Contact Number </label> <br>
+                        <input type="text" class="add-address-input" placeholder="1-700-600-3654"> <br>
+                        <label for="region" class="add-address-label"> Region </label> <br>
+                        <input type="text" class="add-address-input" placeholder="Region"> <br>
+                        <label for="city" class="add-address-label"> City </label> <br>
+                        <input type="text" class="add-address-input" placeholder="City"> <br>
+                        <label for="area" class="add-address-label"> Area </label> <br>
+                        <input type="text" class="add-address-input" placeholder="Area"> <br>
+                        <label for="adress-details" class="add-address-label"> Address Details: </label> <br>
+                        <textarea name="address-details" id="" cols="30" rows="5"></textarea> <br>
+                        <button type="submit" class="save-button">Save</button>
+                    </form>
                 </div>
 
             </div>
 
         </div>
 
+
     </section>
+
+    <!-- add address ends  -->
+
+    <!-- footer starts  -->
 
     <section id="footer">
         <div class="container footer-container">
@@ -332,6 +261,8 @@
             </div>
         </div>
     </section>
+
+    <!-- footer ends  -->
 
     <script src="./script.js"></script>
 

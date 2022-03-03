@@ -18,7 +18,7 @@
 
     <!-- Title  -->
 
-    <title>Profile</title>
+    <title>My order</title>
 
 </head>
 
@@ -118,144 +118,35 @@
 
     <!-- Header navbar ends  -->
 
+    <!-- My Order Starts  -->
 
-
-
-    <!-- My Account Starts  -->
-
-    <section class="my-account-section">
-        <div class="my-account-container container">
-
-            <!-- Beadcrumb Starts  -->
-
-            <div class="breadcrumb-container">
-                <span class="gray">
-                    <a href="index.html">Home > </a>
-
-                </span>
-                <span class="green">
-                    <a href="my-account.html">My Account</a>
-                </span>
-
+    <section class="my-order">
+        <div class="my-order-container">
+            <div class="my-order-title">
+                Your Order Has Been Placed
             </div>
-
-            <!-- Breadcrumb ends  -->
-
-            <!-- account Container starts  -->
-
-            <div class="account-container">
-                <div class="account-options">
-                    <a class="unselected-option" href="my-account.html">My account</a>
-                    <a class="selected-option" href="profile.html">Profile</a>
-                    <a class="unselected-option" href="notification.html">Notification</a>
-                    <a class="unselected-option" href="">Order</a>
-                    <a class="unselected-option" href="payment.html">Payment</a>
-                    <a class="unselected-option" href="change-password.html">Change password</a>
-                    <button class="apply-button"> Logout </button>
-                </div>
-
-                <div class="profile-information-container">
-                    <div class="profile-title-container">
-                        Your Profile
-                    </div>
-                    <div class="profile-form-container">
-                        <form class="profile-form" action="">
-                            <label for="profile-name" class="profile-input-label"> Profile Name </label>
-                            <br>
-                            <input type="text" class="profile-input">
-                            <label for="profile-email-address" class="profile-input-label"> Email-address </label>
-                            <br>
-                            <input type="text" class="profile-input email-input">
-                            <span> <button class="verify-button"> Verify </button> </span>
-                            <label for="profile-phone-number" class="profile-input-label"> Phone Number </label>
-                            <br>
-                            <input type="text" class="profile-input">
-                            <label for="profile-gender" class="profile-input-label"> Gender </label>
-                            <br>
-                            <select name="profile-gender" id="profile-gender" class="profile-gender-select">
-                                <option value="Male"> Male </option>
-                                <option value="Female"> Female </option>
-                            </select>
-                            <br>
-                            <label for="profile-name" class="profile-input-label"> Date of Birth (YYYY-DD-MM) </label>
-                            <br>
-                            <input type="text" class="profile-input">
-
-                        </form>
-                    </div>
-
-                    <div class="delivery-address-container">
-                        <div class="delivery-address-title">
-                            <i class="fas fa-location-dot"></i>
-                            Select a delivery address
-                        </div>
-                        <div class="add-new-address" onclick="window.location.href = 'add-address.html';">
-                            + New Address
-                        </div>
-                    </div>
-
-
-                    <div class="added-address-container">
-                        <div class="added-address">
-                            <div class="address-section">
-                                <div class="added-address-name">
-                                    John Smith
-                                </div>
-                                <div class="added-address-number">
-                                    1-700-600-3654
-                                </div>
-                                <div class="added-address-location">
-                                    H 5, Section 3, Adelide
-                                </div>
-                                <div class="added-address-country">
-                                    Korea
-                                </div>
-                            </div>
-                            <div class="added-address-buttons">
-                                <button class="address-buttons"> Edit </button>
-                                <button class="address-buttons"> Remove </button>
-                                <div class="default-container">
-                                    <input type="checkbox" name="default-address" id="default-address">
-                                    <label for="default-address">Default</label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="added-address">
-                            <div class="address-section">
-                                <div class="added-address-name">
-                                    John Smith
-                                </div>
-                                <div class="added-address-number">
-                                    1-700-600-3654
-                                </div>
-                                <div class="added-address-location">
-                                    H 5, Section 3, Adelide
-                                </div>
-                                <div class="added-address-country">
-                                    Korea
-                                </div>
-                            </div>
-                            <div class="added-address-buttons">
-                                <button class="address-buttons"> Edit </button>
-                                <button class="address-buttons"> Remove </button>
-                                <div class="default-container">
-                                    <input type="checkbox" name="default-address" id="default-address">
-                                    <label for="default-address">Default</label>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-
-                </div>
-
+            <div class="my-order-social">
+                Follow Us:
+                <a href="">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="">
+                    <i class="fab fa-youtube"></i>
+                </a>
             </div>
-
         </div>
 
     </section>
+
+    <!-- My Order Ends  -->
+
+    <!-- footer starts  -->
 
     <section id="footer">
         <div class="container footer-container">
@@ -264,7 +155,7 @@
                     <p>Your Store</p>
                 </div>
                 <div class="footer-grid location-box">
-                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></i></div>
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></div>
                     <div class="time-table">
                         Address: 529-19, Gwangyeo-ro Gonjiam-eup, Gwangju-si. Gyeonggi-do
                         12722.
@@ -332,6 +223,8 @@
             </div>
         </div>
     </section>
+
+    <!-- footer ends  -->
 
     <script src="./script.js"></script>
 
