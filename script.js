@@ -182,43 +182,6 @@ function clickme(smallImg) {
 
 //product detail script ends
 
-// range slider starts
-
-window.onload = function () {
-  slideOne();
-  slideTwo();
-};
-
-let sliderOne = document.getElementById("slider-1");
-let sliderTwo = document.getElementById("slider-2");
-let displayValOne = document.getElementById("range1");
-let displayValTwo = document.getElementById("range2");
-let minGap = 0;
-let sliderTrack = document.querySelector(".slider-track");
-let sliderMaxValue = document.getElementById("slider-1").max;
-
-function slideOne() {
-  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-    sliderOne.value = parseInt(sliderTwo.value) - minGap;
-  }
-  displayValOne.textContent = sliderOne.value;
-  fillColor();
-}
-function slideTwo() {
-  if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
-    sliderTwo.value = parseInt(sliderOne.value) + minGap;
-  }
-  displayValTwo.textContent = sliderTwo.value;
-  fillColor();
-}
-function fillColor() {
-  percent1 = (sliderOne.value / sliderMaxValue) * 100;
-  percent2 = (sliderTwo.value / sliderMaxValue) * 100;
-  sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #3c7a17 ${percent1}% , #3c7a17 ${percent2}%, #dadae5 ${percent2}%)`;
-}
-
-// range slider ends
-
 //change password
 
 var oldState = false;
@@ -257,3 +220,24 @@ function toggle3() {
   }
   console.log(confirmState);
 }
+
+// Change password ends
+
+// Help accordion starts
+
+var acc = document.getElementsByClassName("accordion");
+var z;
+
+for (z = 0; z < acc.length; z++) {
+  acc[z].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+// Help accordion ends
