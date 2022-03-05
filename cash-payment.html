@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome CDN  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS CDN  -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Title  -->
+
+    <title> Cash Payment </title>
+
+</head>
+
+<body>
+
+
+    <!-- Header Navbar starts  -->
+
+    <section class="header-navbar">
+        <div class="header">
+            <div class="header-image-container">
+                <img src="./images/header banner.png" alt="">
+            </div>
+
+            <div class="header-options">
+                <div class="header-phone-number">
+                    <i class="fa-solid fa-phone"></i> 1-700-600-3654
+                </div>
+                <div class="header-email-address">
+                    <i class="fa-regular fa-envelope"></i> something@something.com
+                </div>
+                <div class="header-help-option">
+                    <a href="">
+                        <i class="fa-regular fa-circle-question"></i> help
+                    </a>
+                </div>
+                <div class="header-currency-dropdown">
+                    <select name="currency" id="currency">
+                        <option value="won">W</option>
+                        <option value="tk">Tk</option>
+                    </select>
+                </div>
+                <div class="header-language-dropdown">
+                    <select name="language" id="language">
+                        <option value="English">English</option>
+                        <option value="Bangla">Bangla</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="navbar">
+            <div class="navbar-container">
+                <div class="top-nav container">
+                    <div class="nav-logo">
+                        <a href="index.html">
+                            <img src="./images/nav logo.png" alt="" srcset="">
+                        </a>
+                    </div>
+                    <div class="nav-address">
+                        <div class="nav-address-logo">
+                            <i class="fas fa-location-dot"></i>
+                        </div>
+                        <div class="nav-adress-location">
+                            <p style="color: black;"> Delivery:</p>
+                            <p style="color: #3C7A17;">H 15, Section 3, Dhaka</p>
+                        </div>
+                    </div>
+                    <div class="nav-search">
+                        <form action="" class="nav-search-form">
+                            <input type="text" name="search" id="search" class="search-input"
+                                placeholder="Search Product">
+                            <button type="submit" class="search-input"><i class="fas fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="nav-icons">
+                        <div class="nav-icon-option">
+                            <a href="wishlist.html">
+                                <i class="far fa-heart"></i>
+                            </a>
+                        </div>
+                        <div class="nav-icon-option">
+                            <a href="cart.html">
+                                <i class="fa fa-cart-shopping"></i>
+                            </a>
+                        </div>
+                        <div class="nav-icon-option">
+                            <a href="my-account.html">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                        </div>
+                        <div class="nav-icon-option">
+                            <a href="">
+                                Sign out
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+    </section>
+
+    <!-- Header navbar ends  -->
+
+    <!-- Secure Payment starts  -->
+
+    <section class="secure-payment">
+        <div class="payment-and-order-container container">
+            <div class="payment-section">
+                <div class="secure-payment-container">
+                    <span class="secure-payment-icon">
+                        <i class="fa fa-shield"></i>
+                    </span>
+                    <span class="secure-payment-text">
+                        Secure Payment
+                    </span>
+
+                    <div class="order-step">
+                        <img src="./images/secure.PNG" alt="">
+                    </div>
+
+
+                </div>
+
+                <div class="shipping-address-container">
+                    Shipping Address
+
+                    <span class="add-shipping-address">
+                        + Add new shipping address
+                    </span>
+                </div>
+
+                <div class="add-your-address-container">
+                    <div class="add-address-title">
+                        Add your address :
+                    </div>
+                    <form action="">
+                        <div class="add-address-form-container">
+                            <div class="add-address-column">
+                                <label for="name" class="address-label">Name :</label> <br>
+                                <input type="text" name="address-name" id="address-name" class="address-input"
+                                    placeholder="First name">
+                                <input type="text" name="address-name" id="address-name" class="address-input"
+                                    placeholder="Last name"> <br>
+                                <label for="address-line-1" class="address-label">Address Line 1 :</label> <br>
+                                <input type="text" name="address-address-1" id="address-address-1" class="address-input"
+                                    placeholder="Street and number, company name, C/O"> <br>
+                                <label for="country" class="address-label">Country / Region :</label> <br>
+                                <select name="address-country" id="address-country">
+                                    <option value="korea"> Korea </option>
+                                    <option value="bangladesh"> Bangladesh </option>
+                                </select> <br>
+                                <label for="city" class="address-label">City :</label> <br>
+                                <input type="text" name="address-city" id="address-city" class="address-input"
+                                    placeholder="Your City"> <br>
+
+                                <input type="radio" name="radio-address">
+                                <span> Home </span>
+                                <input type="radio" name="radio-address">
+                                <span> Office </span>
+                            </div>
+
+                            <div class="add-address-column">
+                                <label for="phone-no" class="address-label">Phone No :</label> <br>
+                                <input type="text" name="address-phone" id="address-name" class="address-input"
+                                    placeholder="Your Phone no"> <br>
+                                <label for="address-line-2" class="address-label">Address Line 2:</label> <br>
+                                <input type="text" name="address-address-2" id="address-address-2" class="address-input"
+                                    placeholder="Apartment, suite, unit, building, floor, etc (Optional)"> <br>
+                                <label for="state"> State / Province / Region </label> <br>
+                                <input type="text" name="address-state" id="address-state" class="address-input"
+                                    placeholder="Please select a state/province/region"> <br>
+                                <label for="zip"> Zip / Post Code: </label> <br>
+                                <input type="text" name="address-zip" id="address-zip" class="address-input"
+                                    placeholder="Your Post Code"> <br>
+                                <input type="checkbox" name="save-address-default" id="save-address-default">
+                                <label for="save-address-default"> Set as default shipping address </label> <br>
+                                <button class="address-button-cancel">Cancel</button>
+                                <button class="address-button-save" type="submit">Save</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="payment-type-container">
+
+                <div class="add-address-title">
+                    Payment Type :
+                </div>
+
+                <div class="payment-options-container">
+
+                    <div class="payment-type">
+                        <button> Cash On Delivery </button>
+                    </div>
+
+                    <div class="payment-type">
+                        <img src="./images/stripe.png" alt="">
+                    </div>
+
+                    <div class="payment-type">
+                        <img src="./images/stripe.png" alt="">
+                    </div>
+
+                    <div class="payment-type">
+                        <img src="./images/stripe.png" alt="">
+                    </div>
+
+                    <div class="payment-type">
+                        <button> Cash On Delivery </button>
+                    </div>
+
+                    <div class="payment-type">
+                        <img src="./images/paypal.png" alt="">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="order-summary-section">
+            <div class="add-address-title">
+                Order Summary :
+            </div>
+            <form action="">
+                <input type="text" class="summary-voucher" placeholder="Enter Voucher Code">
+                <button type="submit" class="summary-voucher-apply"> Apply </button>
+            </form>
+
+            <div class="order-summary-table">
+                <div class="order-summary-category">
+                    <p>Subtotal</p>
+                    <p>Voucher Discount</p>
+                    <p>Shipping Fee</p>
+                </div>
+                <div class="order-summary-value">
+                    <p><i class="fas fa-won-sign"></i>400.00</p>
+                    <p><i class="fas fa-won-sign"></i>25.00</p>
+                    <p><i class="fas fa-won-sign"></i>00.00</p>
+                </div>
+
+            </div>
+            <hr>
+
+            <div class="order-total-container relative">
+                <span class="order-total"> Order Total </span>
+                <span class="order-total-value"> <i class="fas fa-won-sign"></i>425.00 </span>
+            </div>
+
+            <div class="complete-order-button-container">
+                <button> Complete Order </button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Secure Payment ends  -->
+
+    <!-- Prdouct amount and qty starts  -->
+
+    <div class="wishlist-container container">
+        <div class="wishlist-item">
+
+
+            <div class="cart-product-details">
+                <div class="cart-product-image">
+                    <img src="./images/cart product.png" alt="">
+                </div>
+                <div class="cart-product-name-price">
+                    <div class="cart-product-name">
+                        Nascetur ridiculus Mauris Dictum Ridiculus
+                    </div>
+                    <div class="cart-product-amount-price">
+                        <div class="single-unit-price">
+                            05.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                        <div class="amount-counter">
+                            <div class="wishlist-increase-button">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="amount">
+                                2
+                            </div>
+                            <div class="wishlist-decrease-button">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            10.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlist-button-container trash-button">
+
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wishlist-item">
+
+
+            <div class="cart-product-details">
+                <div class="cart-product-image">
+                    <img src="./images/cart product.png" alt="">
+                </div>
+                <div class="cart-product-name-price">
+                    <div class="cart-product-name">
+                        Nascetur ridiculus Mauris Dictum Ridiculus
+                    </div>
+                    <div class="cart-product-amount-price">
+                        <div class="single-unit-price">
+                            05.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                        <div class="amount-counter">
+                            <div class="wishlist-increase-button">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="amount">
+                                2
+                            </div>
+                            <div class="wishlist-decrease-button">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            10.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlist-button-container trash-button">
+
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wishlist-item">
+
+
+            <div class="cart-product-details">
+                <div class="cart-product-image">
+                    <img src="./images/cart product.png" alt="">
+                </div>
+                <div class="cart-product-name-price">
+                    <div class="cart-product-name">
+                        Nascetur ridiculus Mauris Dictum Ridiculus
+                    </div>
+                    <div class="cart-product-amount-price">
+                        <div class="single-unit-price">
+                            05.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                        <div class="amount-counter">
+                            <div class="wishlist-increase-button">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="amount">
+                                2
+                            </div>
+                            <div class="wishlist-decrease-button">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            10.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlist-button-container trash-button">
+
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="wishlist-item">
+
+
+            <div class="cart-product-details">
+                <div class="cart-product-image">
+                    <img src="./images/cart product.png" alt="">
+                </div>
+                <div class="cart-product-name-price">
+                    <div class="cart-product-name">
+                        Nascetur ridiculus Mauris Dictum Ridiculus
+                    </div>
+                    <div class="cart-product-amount-price">
+                        <div class="single-unit-price">
+                            05.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                        <div class="amount-counter">
+                            <div class="wishlist-increase-button">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="amount">
+                                2
+                            </div>
+                            <div class="wishlist-decrease-button">
+                                <i class="fas fa-minus"></i>
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            10.00 <i class="fas fa-won-sign"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishlist-button-container trash-button">
+
+                    <i class="far fa-trash-alt"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Prdouct amount and qty ends  -->
+
+
+    <!-- <================footer===========> -->
+
+
+    <section id="footer">
+
+        <hr />
+
+        <div class="container footer-container">
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Your Store</p>
+                </div>
+                <div class="footer-grid location-box">
+                    <div class="footer-icon"><i class="fas fa-map-marker-alt"></i></i></div>
+                    <div class="time-table">
+                        Address: 529-19, Gwangyeo-ro Gonjiam-eup, Gwangju-si. Gyeonggi-do
+                        12722.
+                    </div>
+                </div>
+                <div class="time-table">Monday - Friday: 9:00-20:00</div>
+                <div class="time-table">Saturady: 11:00 - 15:00</div>
+                <div class="time-table">Show on map</div>
+            </div>
+
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Need help</p>
+                </div>
+
+                <div class="footer-font">+48 525-350-0968</div>
+
+                <div class="footer-grid">
+                    <div><img src="./images/messege.png"></div>
+                    <div class="online-column">
+                        <div class="footer-chat">Online chat</div>
+                        <div class="online-chat">Get Expert Help</div>
+                    </div>
+                </div>
+                <div class="footer-font">groceryinfo@gmail.com</div>
+                <div class="social-icon">
+                    <div class="foot-social-icon"> <i class="fab fa-facebook"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-twitter"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-google-plus-g"></i></div>
+                    <div class="foot-social-icon"><i class="fab fa-youtube"></i></div>
+                </div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Account</p>
+                </div>
+
+                <div class="footer-font">My Account</div>
+                <div class="footer-font">My Order</div>
+                <div class="footer-font">Returns</div>
+                <div class="footer-font">Shipping</div>
+                <div class="footer-font">Wishlist</div>
+            </div>
+            <div class="footer-item">
+                <div class="footer-head">
+                    <p>Store</p>
+                </div>
+
+                <div class="footer-font">Affilate</div>
+                <div class="footer-font">Bestsellers</div>
+                <div class="footer-font">discount</div>
+                <div class="footer-font">Latest Products</div>
+                <div class="footer-font">Sale</div>
+            </div>
+        </div>
+        <div class="container foot-container">
+            <div class="left-foot">
+                <div class="left-foot-font">About Us</div>
+                <div class="left-foot-font">Delivery information</div>
+                <div class="left-foot-font">Privacy Policy</div>
+                <div class="left-foot-font">Sales</div>
+            </div>
+            <div class="pay-card">
+                <img src="./images/paidcard.png" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer ends  -->
+
+    <!-- SwiperJs script source  -->
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

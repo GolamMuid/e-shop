@@ -2435,7 +2435,229 @@ input[type="range"]:active::-webkit-slider-thumb {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* My order page ends  */
+/* My Order page ends  */
+
+/* Cash Payment page starts  */
+
+.payment-and-order-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  column-gap: 10px;
+}
+
+.secure-payment-container {
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 13px -4px #000000;
+  box-shadow: 5px 5px 13px -4px #000000;
+  position: relative;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.secure-payment-icon {
+  font-size: 2.25rem;
+  color: #3c7a17;
+  padding: 0 10px;
+}
+
+.secure-payment-text {
+  font-size: 1rem;
+  color: #3c7a17;
+}
+
+.order-step {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.shipping-address-container {
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 13px -4px #000000;
+  box-shadow: 5px 5px 13px -4px #000000;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 24px;
+}
+
+.add-shipping-address {
+  position: absolute;
+  right: 10px;
+  top: 32px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #3c7a17;
+  cursor: pointer;
+}
+
+.add-your-address-container {
+  border: none;
+  border-radius: 6px;
+  -webkit-box-shadow: 5px 5px 13px -4px #000000;
+  box-shadow: 5px 5px 13px -4px #000000;
+  margin-bottom: 20px;
+  padding: 16px;
+}
+
+.add-address-title {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.add-address-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+}
+
+.address-label {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.address-input,
+#address-country {
+  border: none;
+  border-bottom: solid 1px #3d3d3d;
+  margin-bottom: 14px;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.address-button-cancel {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: solid 1px;
+  color: #242527;
+  border-radius: 4px;
+}
+
+.address-button-save {
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3c7a17;
+  color: white;
+}
+
+.payment-options-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-options-container button,
+.payment-options-container img {
+  width: 100%;
+  height: 100%;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.order-summary-section {
+  -webkit-box-shadow: 5px 5px 13px -4px #000000;
+  box-shadow: 5px 5px 13px -4px #000000;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 6px;
+  padding: 16px;
+  height: fit-content;
+}
+
+.summary-voucher {
+  border: solid 1px #3d3d3d;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  width: 60%;
+}
+
+.summary-voucher-apply {
+  border: solid 1px #3d3d3d;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0 6px;
+}
+
+.order-summary-table {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.order-summary-category p,
+.order-summary-value p {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.order-summary-value p {
+  text-align: right;
+}
+
+.order-summary-value i {
+  color: #3c7a17;
+}
+
+.order-summary-section hr {
+  color: #3d3d3d;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.order-total-container {
+  margin-bottom: 40px;
+}
+
+.order-total,
+.order-total-value {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.order-total-value {
+  position: absolute;
+  right: 0;
+  color: #3c7a17;
+}
+
+.complete-order-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.complete-order-button-container button {
+  background-color: #3c7a17;
+  width: 80%;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+}
+
+.trash-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Cash payment page ends  */
 
 /* help page starts  */
 
