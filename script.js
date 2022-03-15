@@ -41,6 +41,23 @@ window.onclick = function (event) {
 
 // categories dropdown endss
 
+// floating cart starts
+
+var cartButton = document.querySelector(".floating-cart-container");
+var cartWindow = document.querySelector(".floating-cart-product");
+
+cartButton.addEventListener("click", carthide);
+
+function carthide() {
+  if (cartWindow.style.display == "block") {
+    cartWindow.style.display = "none";
+  } else {
+    cartWindow.style.display = "block";
+  }
+}
+
+// floating cart ends
+
 // first slider starts
 
 var swiper = new Swiper(".indexFirstSliderSwiper", {
