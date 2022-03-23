@@ -258,3 +258,25 @@ for (z = 0; z < acc.length; z++) {
 }
 
 // Help accordion ends
+
+// Back to top starts
+
+var topBtn = document.querySelector(".back-to-top-button-container");
+
+document.addEventListener("scroll", scrollVisible);
+
+function scrollVisible() {
+  if (window.pageYOffset > 300) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+topBtn.addEventListener("click", backToTop);
+
+function backToTop() {
+  window.scrollTo(0, 0);
+}
+
+// Back to top ends
